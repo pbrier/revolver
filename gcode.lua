@@ -58,7 +58,7 @@ function gcode.copyfile(self,name)
 	self:comment("<-- Including file: " .. name .. " -->");
   local fh = io.open(name, "r");
 	if  fh ~= nil  then 
-		for l in fh:lines("end.gcode") do 
+		for l in fh:lines() do 
 			gc:write(l); 
 		end;
 		fh:close();
