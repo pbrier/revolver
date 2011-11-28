@@ -13,7 +13,7 @@ a circular shape, with the contour you have drawn in the bitmap.
 The bitmap should have a WHITE BACKGROUND and the contour of the shape should 
 be drawn in BLACK.
 
-LUA (www.lua.org) is used to convert the contour into a shape. Download the right
+lua (www.lua.org) is used to convert the contour into a shape. Download the right
 lua version (at least version 5.1.4) for your platform, and extract all the files in 
 the same folder as the revolver scripts. Some versions of linux ship with an older
 version of lua (5.1) this may not work. Download the right version (in source

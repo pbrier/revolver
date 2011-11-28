@@ -24,7 +24,7 @@
  -- use: lua revolver.lua [config file]
  --
  --
-require "pgm"        -- PGM bitmap file reader
+require "image"      -- bitmap file reader
 require "gcode"      -- gcode file writer
 require "materials"  -- material definitions
 require "styles"     -- material definitions
@@ -68,7 +68,7 @@ gc:move(0,0);
 gc:fan(0);
 gc:temperature(shape.material.tstandby);
 gc:copyfile("end.gcode");
-print("\nDone.\n");
+print("\nDone, " .. gcode.round(gc.totale,1) .. "mm extruded.\n");
 
 -- Conversion for visualisation
 -- os.execute("../gcode2vtk/gcode2vtk.exe " .. oname);

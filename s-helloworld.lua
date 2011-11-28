@@ -31,7 +31,7 @@ shape =
 	min_thickness = 1.0;                       -- [mm] minimal wall thickness (default is 1 shell) Whem specified, no wall will be made thinner than this thickness, even
                                              -- if the bitmap specifies otherwise
   contour = "square.pgm";  -- the image for the shape use "BINARY PGM" image with white background, and black line that defines the shape
-	texture = "hello.pgm";   -- the image for the surface. Use "BINARY PGM" image. BLACK is "0.0" and White is "1.0" modulation of the radius. Use "modulation" parameter to scale this
+	texture = "hello.bmp";   -- the image for the surface. Use "BINARY PGM" image. BLACK is "0.0" and White is "1.0" modulation of the radius. Use "modulation" parameter to scale this
 	modulation = -1;      -- [mm] depth of the surface  modulation for the texture (0..255 pixel intensity is 0..modulation mm radius change)
 	-- modulator = function(r,a,z)  return 0.1*z* math.sin(7*a); end; -- Specify a function to modulate the surface
 	-- frequency = 3.0;      -- Use default "sine wave" modulation of the radius, with specified frequenty, and "modulation" amplitude

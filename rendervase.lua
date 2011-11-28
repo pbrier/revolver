@@ -117,8 +117,8 @@ end;
 
 function render(self,gc)
 
-  self.image = pgm.load(self.contour);
-	self.timage = pgm.load(self.texture);
+  self.image = image.load(self.contour);
+	self.timage = image.load(self.texture);
 	local img = self.image;
   local pos = self.pos;
 	local w = self.size.width;
